@@ -121,11 +121,11 @@ ssize_t Buffer::WriteFd(int fd, int* Errno) {
     return len;
 }
 
-char* Buffer::BeginPter_() {
+char* Buffer::BeginPtr_() {
     return &buffer_[0];
 }
 
-const char* Buffer::BeginPtr_() const {
+const char* Buffer::BeginPtr_() const{
     return &buffer_[0];
 }
 

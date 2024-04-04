@@ -4,6 +4,7 @@
 #include <cstring>      // for memset
 #include <unistd.h>     // for read, write
 #include <sys/uio.h>    // for readv, writev
+#include <iostream>
 #include <assert.h>
 #include <vector>
 #include <string>
@@ -39,7 +40,7 @@ public:
     ssize_t WriteFd(int fd, int* Errno);
 
 private:
-    char* BeginPter_();                 // 返回缓冲区的头指针
+    char* BeginPtr_();                 // 返回缓冲区的头指针
     const char* BeginPtr_() const;      // 返回缓冲区的头指针
     void MakeSpace_(size_t len);        // 确保有足够的空间
 
