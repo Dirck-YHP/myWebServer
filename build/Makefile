@@ -2,7 +2,7 @@ CXX = g++
 CFLAGS = -std=c++14 -O2 -Wall -g
 
 TARGET = server
-OBJS = ../code/main.cpp ../code/buffer/*.cpp \
+OBJS = ../code/main.cpp ../code/buffer/*.cpp ../code/log/*.cpp \
 	../code/server/*.cpp 
 
 all: $(OBJS)
