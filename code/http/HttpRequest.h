@@ -34,7 +34,7 @@ public:
     std::string GetPost(const std::string& key) const;
     std::string GetPost(const char* key) const;
 
-    bool IsKeepAlive() const;
+    bool IsKeepAlive() const;       // 判断当前请求是否为一个持久连接
 
 private:
     bool ParseRequestLine_(const std::string& line);                   // 解析请求行

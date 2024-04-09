@@ -279,6 +279,7 @@ std::string HttpRequest::GetPost(const char* key) const {
     return "";
 }
 
+// 判断当前请求是否为一个持久连接
 bool HttpRequest::IsKeepAlive() const {
     if(header_.count("Connection") == 1) {
         return header_.find("Connection")->second == "keep-alive" && version_ == "1.1";
