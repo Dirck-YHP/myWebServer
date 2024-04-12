@@ -1,0 +1,8 @@
+2024/04/11 11:28:34.716742 [info] :  ========== Server Init! ========== 
+2024/04/11 11:28:34.716780 [info] : Listen Mode: ET, Open Linger: LT
+2024/04/11 11:28:34.716912 [info] : LogSys level : 1
+2024/04/11 11:28:34.717165 [info] : srcDir: (null)
+2024/04/11 11:28:34.717259 [info] : SqlConnPool num: 12, ThreadPool num: 8
+2024/04/11 11:28:34.737856 [info] : Server port:9006
+2024/04/11 11:28:34.737978 [info] :  ========== Server Start! ========== 
+2024/04/11 11:29:42.677815 [info] : Client[18](127.0.0.1:23773) in, userCount:1

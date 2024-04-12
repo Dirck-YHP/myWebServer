@@ -1,0 +1,69 @@
+2024/04/12 08:35:31.489650 [info] :  ========== Server Init! ========== 
+2024/04/12 08:35:31.489687 [info] : Listen Mode: LT, Open Linger: LT
+2024/04/12 08:35:31.489873 [info] : LogSys level : 1
+2024/04/12 08:35:31.490032 [info] : srcDir: (null)
+2024/04/12 08:35:31.490130 [info] : SqlConnPool num: 12, ThreadPool num: 8
+2024/04/12 08:35:31.518828 [info] : Server port:9006
+2024/04/12 08:35:31.519091 [info] :  ========== Server Start! ========== 
+2024/04/12 08:35:39.069557 [info] : Client[18](127.0.0.1:50337) in, userCount:1
+2024/04/12 08:35:39.069602 [info] : Client[18] in!
+2024/04/12 08:35:39.069625 [info] : Client[19](127.0.0.1:52897) in, userCount:2
+2024/04/12 08:35:39.069643 [info] : Client[19] in!
+2024/04/12 08:35:39.145505 [info] : Client[20](127.0.0.1:55457) in, userCount:3
+2024/04/12 08:35:39.145574 [info] : Client[20] in!
+2024/04/12 08:35:39.145720 [info] : Client[21](127.0.0.1:57505) in, userCount:4
+2024/04/12 08:35:39.145754 [info] : Client[21] in!
+2024/04/12 08:35:39.145777 [info] : Client[22](127.0.0.1:61089) in, userCount:5
+2024/04/12 08:35:39.145787 [info] : Client[22] in!
+2024/04/12 08:35:39.145947 [info] : Client[23](127.0.0.1:62113) in, userCount:6
+2024/04/12 08:35:39.145981 [info] : Client[23] in!
+2024/04/12 08:35:55.170931 [info] : Verify name: dirck, password: 6
+2024/04/12 08:35:55.180109 [info] : user used!
+2024/04/12 08:36:07.190673 [info] : Verify name: dirck, password: yhp20001122..
+2024/04/12 08:36:07.191084 [info] : pwd error!
+2024/04/12 08:36:12.704223 [info] : Verify name: dirck, password: yhp20001122..
+2024/04/12 08:36:12.704582 [info] : user used!
+2024/04/12 08:36:24.420994 [info] : Verify name: dirck, password: 6
+2024/04/12 08:36:24.421439 [info] : user used!
+2024/04/12 08:37:24.535736 [info] : Client[21] quit!
+2024/04/12 08:37:24.535954 [info] : Client[21](127.0.0.1:57505) quit, UserCount:5
+2024/04/12 08:37:24.536013 [info] : Client[18] quit!
+2024/04/12 08:37:24.536091 [info] : Client[18](127.0.0.1:50337) quit, UserCount:4
+2024/04/12 08:37:24.536135 [info] : Client[22] quit!
+2024/04/12 08:37:24.536197 [info] : Client[22](127.0.0.1:61089) quit, UserCount:3
+2024/04/12 08:37:24.536237 [info] : Client[23] quit!
+2024/04/12 08:37:24.536296 [info] : Client[23](127.0.0.1:62113) quit, UserCount:2
+2024/04/12 08:37:24.536335 [info] : Client[19] quit!
+2024/04/12 08:37:24.536413 [info] : Client[19](127.0.0.1:52897) quit, UserCount:1
+2024/04/12 08:37:24.536531 [info] : Client[20] quit!
+2024/04/12 08:37:24.536637 [info] : Client[20](127.0.0.1:55457) quit, UserCount:0
+2024/04/12 08:38:57.833553 [info] : Client[18](127.0.0.1:43202) in, userCount:1
+2024/04/12 08:38:57.833615 [info] : Client[18] in!
+2024/04/12 08:38:57.833662 [info] : Client[19](127.0.0.1:43714) in, userCount:2
+2024/04/12 08:38:57.833714 [info] : Client[19] in!
+2024/04/12 08:38:57.904301 [info] : Client[20](127.0.0.1:46274) in, userCount:3
+2024/04/12 08:38:57.904323 [info] : Client[20] in!
+2024/04/12 08:38:57.904420 [info] : Client[21](127.0.0.1:49346) in, userCount:4
+2024/04/12 08:38:57.904444 [info] : Client[21] in!
+2024/04/12 08:38:57.906342 [info] : Client[22](127.0.0.1:52930) in, userCount:5
+2024/04/12 08:38:57.906383 [info] : Client[22] in!
+2024/04/12 08:38:57.937936 [info] : Client[23](127.0.0.1:53954) in, userCount:6
+2024/04/12 08:38:57.937984 [info] : Client[23] in!
+2024/04/12 08:39:03.600660 [info] : Verify name: root, password: yhp20001122..
+2024/04/12 08:40:00.781539 [info] : Client[21] quit!
+2024/04/12 08:40:00.781723 [info] : Client[21](127.0.0.1:49346) quit, UserCount:5
+2024/04/12 08:40:00.781764 [info] : Client[18] quit!
+2024/04/12 08:40:00.781807 [info] : Client[18](127.0.0.1:43202) quit, UserCount:4
+2024/04/12 08:40:00.781837 [info] : Client[19] quit!
+2024/04/12 08:40:00.781900 [info] : Client[19](127.0.0.1:43714) quit, UserCount:3
+2024/04/12 08:40:00.782168 [info] : Client[22] quit!
+2024/04/12 08:40:00.782240 [info] : Client[22](127.0.0.1:52930) quit, UserCount:2
+2024/04/12 08:40:00.782291 [info] : Client[23] quit!
+2024/04/12 08:40:00.782347 [info] : Client[23](127.0.0.1:53954) quit, UserCount:1
+2024/04/12 08:40:00.782361 [info] : Client[20] quit!
+2024/04/12 08:40:00.782393 [info] : Client[20](127.0.0.1:46274) quit, UserCount:0
+2024/04/12 08:40:03.665911 [info] : Client[19] quit!
+2024/04/12 08:40:03.666034 [info] : Client[23] quit!
+2024/04/12 08:40:03.666113 [info] : Client[21] quit!
+2024/04/12 08:40:03.666160 [info] : Client[22] quit!
+2024/04/12 08:40:03.666187 [info] : Client[20] quit!
