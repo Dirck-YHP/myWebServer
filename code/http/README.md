@@ -8,10 +8,44 @@ Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0
 Accept-Encoding: gzip, deflate, sdch, br
 Accept-Language: en-US,en;q=0.8
 ```
+上面只包括请求行、请求头和空行，请求数据为空。请求方法是GET，协议版本是HTTP/1.1；请求头是键值对的形式。
+
 &emsp;HTTP请求报文由**请求行、请求头部和请求体**组成。
 - 请求行包括请求方法、请求的资源路径和HTTP协议版本。
 - 请求头部包含多个键值对，用于描述请求的各种属性。
 - 请求体通常用于POST或PUT请求，包含发送给服务器的数据。
+
+解析过程由`parse()`函数完成；函数根据状态分别调用了
+
+```c++
+ParseRequestLine_();//解析请求行
+ParseHeader_();//解析请求头
+ParseBody_();//解析请求体
+```
+
+三个函数对请求行、请求头和数据体进行解析。当然解析请求体的函数还会调用`ParsePost_()`，因为Post请求会携带请求体。
+
+# Http响应报文结构
+```HTML
+HTTP/1.1 200 OK
+Date: Fri, 22 May 2009 06:07:21 GMT
+Content-Type: text/html; charset=UTF-8
+空行
+<html>
+      <head></head>
+      <body>
+            <!--body goes here-->
+      </body>
+</html>
+```
++ 状态行，由HTTP协议版本号， 状态码， 状态消息 三部分组成。
+第一行为状态行，（HTTP/1.1）表明HTTP版本为1.1版本，状态码为200，状态消息为OK。
++ 消息报头，用来说明客户端要使用的一些附加信息。
+第二行和第三行为消息报头，Date:生成响应的日期和时间；Content-Type:指定了MIME类型的HTML(text/html),编码类型是UTF-8。
++ 空行，消息报头后面的空行是必须的。
++ 响应正文，服务器返回给客户端的文本信息。空行后面的html部分为响应正文。
+___
+解析请求报文和生成响应报文都是在`HttpConn::process()`函数内完成的。并且是在解析请求报文后随即生成了响应报文。之后这个生成的响应报文便放在缓冲区等待`writev()`函数将其发送给fd。
 
 # 状态机
 下面是一个简单的状态机来解析HTTP请求报文：
