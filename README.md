@@ -17,22 +17,25 @@
 
 ## Content
 
-**bin**              可执行文件
-**build**            
-——Makefile
-**code**             源代码
-——buffer
-——http
-——log
-——pool
-——server
-——timer
-——main.cpp
-**log**              日志文件
-**resources**        静态资源
-**webbench-1.5**     压力测试
-**Makefile**
-**README.md**
+```
+|——bin              可执行文件
+|——build            
+|————Makefile
+|——code             源代码
+|————buffer
+|————http
+|————log
+|————pool
+|————server
+|————timer
+|————main.cpp
+|——log              日志文件
+|——resources        静态资源
+|——webbench-1.5     压力测试
+|——Makefile
+|——README.md
+```
+
 
 
 ## Build & Usage
